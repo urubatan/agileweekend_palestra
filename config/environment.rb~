@@ -29,9 +29,7 @@ Rails::Initializer.run do |config|
   # config.gem "aws-s3", :lib => "aws/s3"
   config.gem "rspec"
   config.gem "rspec-rails"
-  config.gem "cucumber"
-  config.gem "webrat"
-
+  config.gem 
 
   # Only load the plugins named here, in the order given. By default, all plugins 
   # in vendor/plugins are loaded in alphabetical order.
