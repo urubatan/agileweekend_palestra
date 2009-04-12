@@ -27,10 +27,10 @@ Rails::Initializer.run do |config|
   # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
-  config.gem "rspec", :version => "1.2.2", :lib => "spec"
-  config.gem "rspec-rails", :version => "1.2.2", :lib => "spec/rails"
-  config.gem "cucumber"
-  config.gem "webrat"
+  config.gem "rspec", :version => "1.2.2", :lib => false
+  config.gem "rspec-rails", :version => "1.2.2", :lib => false
+  config.gem "cucumber", :lib => false
+  config.gem "webrat", :lib => false
 
 
   # Only load the plugins named here, in the order given. By default, all plugins 

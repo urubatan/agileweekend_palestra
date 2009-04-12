@@ -1,0 +1,2 @@
+default: --format progress --language pt features
+test: --format progress --language pt features

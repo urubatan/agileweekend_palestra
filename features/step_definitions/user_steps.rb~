@@ -2,7 +2,7 @@ Given /^os seguintes usuários:$/ do |users|
   User.create!(users.hashes)
 end
 
-When /^eu deleto o usuário número (\d+)$/ do |pos|
+When /^eu deleto o usuário (\d+)(?:st|nd|rd|th)$/ do |pos|
   visit users_url
   within("table > tr:nth-child(#{pos.to_i+1})") do
     click_link "Destroy"
