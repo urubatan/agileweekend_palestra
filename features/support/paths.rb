@@ -6,6 +6,8 @@ module NavigationHelpers
       root_path
     when /página de novo usuário/
       new_user_path
+    when /página de nova sessão/
+      new_session_path
     
     # Add more page name => path mappings here
     

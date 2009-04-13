@@ -2,10 +2,12 @@ module NavigationHelpers
   def path_to(page_name)
     case page_name
     
-    when /a página inicial/
+    when /página inicial/
       root_path
-    when /a página de novo usuário/
+    when /página de novo usuário/
       new_user_path
+    when /página de nova sessão /
+      new_session_path
     
     # Add more page name => path mappings here
     

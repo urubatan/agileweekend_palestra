@@ -1,10 +1,12 @@
-<h1>Usuários do sistema</h1>
+<h1>Listing users</h1>
+
 <table>
   <tr>
-    <th>Nome</th>
-    <th>Senha</th>
+    <th>Name</th>
+    <th>Pasword</th>
     <th>Email</th>
   </tr>
+
 <% for user in @users %>
   <tr>
     <td><%=h user.name %></td>
@@ -16,5 +18,7 @@
   </tr>
 <% end %>
 </table>
+
 <br />
-<%= link_to 'Novo usuário', new_user_path %>
+
+<%= link_to 'New user', new_user_path %>
