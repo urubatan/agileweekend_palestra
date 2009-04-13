@@ -3,6 +3,9 @@ Caracteristica: Autenticação e Autorização
   Qualquer usuário
   Precisa se autenticar para acessar qualquer coisa diferente da página de login
   
+  Contexto:
+    Dado que existe um usuário padrão
+  
   Cenário: Tentativa de acesso de usuário não logado
     Dado eu estou na página de novo usuário
     Então eu devo ver "É necessário se autenticar para acessar o sistema"
@@ -23,5 +26,5 @@ Caracteristica: Autenticação e Autorização
     E eu presciono "Login"
     Então eu devo ver "Usuários do sistema"
     E eu devo ver "Bem vindo"
-    E eu devo ver "Usuário 1"
+    E eu devo ver "user1"
 

@@ -5,7 +5,7 @@
 
 <p>
   <b>Pasword:</b>
-  <%=h @user.password %>
+  <%=h @user.pasword %>
 </p>
 
 <p>

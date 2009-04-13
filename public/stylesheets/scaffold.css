@@ -54,3 +54,7 @@ a:hover { color: #fff; background-color:#000; }
 .notice {
   color: green;
 }
+#current_user {
+  float: right;
+  font-size: -2pt;
+}

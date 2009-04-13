@@ -11,6 +11,9 @@
 <% if flash[:notice] %>
   <div class="notice"><%= flash[:notice] %></div>
 <% end %>
+<% if session[:user] %>
+  <div id="current_user">Bem Vindo: <%= session[:user].name %></div>
+<% end %>
 <%= yield  %>
 </body>
 </html>

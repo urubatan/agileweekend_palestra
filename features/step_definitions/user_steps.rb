@@ -1,6 +1,17 @@
 Given /^os seguintes usuários:$/ do |users|
   User.create!(users.hashes)
 end
+Given /^que existe um usuário padrão$/ do
+  User.create!(:name=>"user1", :password=>"Password1", :email => "user1@domain.com")
+end
+Given /^que ele ja esta autenticado$/ do
+  visit new_session_path 
+  fill_in("Name", :with => "user1") 
+  fill_in("Password", :with => 'Password1') 
+  click_button("Login")
+  response.body.should_not =~ /inválidos/m  
+
+end
 
 When /^eu deleto o usuário número (\d+)$/ do |pos|
   visit users_url

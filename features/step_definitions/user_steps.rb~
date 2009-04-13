@@ -1,8 +1,14 @@
 Given /^os seguintes usuários:$/ do |users|
   User.create!(users.hashes)
 end
+Given /^que existe um usuário padrão$/ do
+  User.create!(:name=>"user1", :password=>"Password1", :email => "user1@domain.com")
+end
+Given /^que ele ja esta autenticado$/ do
+  User.current_user = User.login("user1", "Password1")
+end
 
-When /^eu deleto o usuário (\d+)(?:st|nd|rd|th)$/ do |pos|
+When /^eu deleto o usuário número (\d+)$/ do |pos|
   visit users_url
   within("table > tr:nth-child(#{pos.to_i+1})") do
     click_link "Destroy"
