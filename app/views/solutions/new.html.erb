@@ -1,0 +1,27 @@
+<h1>New solution</h1>
+
+<% form_for(@solution) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :issue_id, "Ligações:" %><br />
+    <%= collection_select(:solution, :issue_id, @issues, :id, :title, {:prompt => true}) %>
+  </p>
+  <p>
+    <%= f.label :user_id, "Técnico:" %><br />
+    <%= collection_select(:solution, :user_id, @users, :id, :name, {:prompt => true}) %>
+  </p>
+  <p>
+    <%= f.label :type, "Soluções:" %><br />
+    <%= select("solution", "type", @solutions, { :include_blank => true }) %>
+  </p>
+  <p>
+    <%= f.label :description, "Descrição:" %><br />
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.submit "Salvar" %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', solutions_path %>

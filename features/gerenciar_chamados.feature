@@ -26,6 +26,10 @@ Característica: Gerenciar chamados de suporte
 
   Esquema do Cenário: suporte offline
     Dado eu estou na página inicial
+    E as seguintes ligações:
+      |title|description|
+      |Reclamação sobre velox|O usuário informa não conseguir acessar a internet depois que a telefônica entrou em coma|
+      |Reclamação sobre BRT|O usuário informa não conseguir acessar a internet depois que a OI comprou a BRT|
     Quando eu clico "Solucionar Problema"
     E eu seleciono "<usuario>" de "Técnico"
     E eu seleciono "<ligacao>" de "Ligações"

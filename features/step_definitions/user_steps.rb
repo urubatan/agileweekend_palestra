@@ -1,6 +1,9 @@
 Given /^os seguintes usuários:$/ do |users|
   User.create!(users.hashes)
 end
+Given /^as seguintes ligações:$/ do |issues|
+  Issue.create!(issues.hashes)
+end
 Given /^que existe um usuário padrão$/ do
   User.create!(:name=>"user1", :password=>"Password1", :email => "user1@domain.com")
 end

@@ -1,0 +1,24 @@
+<h1>Listing solutions</h1>
+
+<table>
+  <tr>
+    <th>Issue</th>
+    <th>User</th>
+    <th>Type</th>
+  </tr>
+
+<% for solution in @solutions %>
+  <tr>
+    <td><%=h solution.issue %></td>
+    <td><%=h solution.user %></td>
+    <td><%=h solution.type %></td>
+    <td><%= link_to 'Show', solution %></td>
+    <td><%= link_to 'Edit', edit_solution_path(solution) %></td>
+    <td><%= link_to 'Destroy', solution, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New solution', new_solution_path %>
