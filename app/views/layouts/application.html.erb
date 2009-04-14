@@ -14,6 +14,15 @@
 <% if session[:user] %>
   <div id="current_user">Bem vindo: <%= session[:user].name %></div>
 <% end %>
+  <div id="menu">
+    <ul>
+      <li><a href="<%= root_path %>">Home</a></li>
+      <li><a href="<%= new_issue_path %>">Nova Ligação</a></li>
+      <li><a href="<%= root_path %>">Solucionar Problema</a></li>
+    </ul>
+  </div>
+  <div id="content">
 <%= yield  %>
+  </div>
 </body>
 </html>

@@ -45,7 +45,7 @@ a:hover { color: #fff; background-color:#000; }
   color: #333;
   margin-bottom: 0;
   padding: 5px;
-}
+} 
 
 #errorExplanation ul li {
   font-size: 12px;
@@ -56,5 +56,19 @@ a:hover { color: #fff; background-color:#000; }
 }
 #current_user {
   float: right;
+  width: 100%;
+  clear: both;
   font-size: -2pt;
+  text-align: right;
 }
+#menu {
+  float: left;
+  width: 100px;
+}
+#content { 
+  margin-left: 110px;
+  padding-left: 10px;
+}
+
+
+

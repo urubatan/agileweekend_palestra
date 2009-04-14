@@ -1,4 +1,4 @@
-Característica: Registrar chamados de suporte
+Característica: Gerenciar chamados de suporte
   Para que seja possível registrar todas as ligações de suporte
   Um funcionário do help desk
   Precisa cadastrar as ligações recebidas, atribuir tarefas aos colegas e marcar tarefas como concluídas
